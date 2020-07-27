@@ -1,0 +1,14 @@
+.heading {
+  margin-bottom: 2rem;
+}
+.button {
+  padding: 1rem;
+  height: auto !important;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &--dark {
+    background-color: rgba(17, 15, 16, 0.88) !important;
+    color: #fff;
+  }
+}

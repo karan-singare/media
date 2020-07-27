@@ -45,6 +45,18 @@ body {
     body {
       padding: 0; } }
 
+.heading {
+  margin-bottom: 2rem; }
+
+.button {
+  padding: 1rem;
+  height: auto !important;
+  text-transform: uppercase;
+  cursor: pointer; }
+  .button--dark {
+    background-color: rgba(17, 15, 16, 0.88) !important;
+    color: #fff; }
+
 .row {
   max-width: 114rem;
   /* trick to align center one block into another */
@@ -117,13 +129,29 @@ body {
     font-size: 1.4rem;
     line-height: 1.6; }
 
+.form {
+  width: 100%;
+  padding: 2rem 1.5rem;
+  border: 1px solid #eeedeb;
+  box-shadow: 0 1rem 2rem rgba(126, 124, 124, 0.57); }
+  .form__item {
+    margin-bottom: 1rem; }
+  .form__label {
+    margin-bottom: .5rem; }
+  .form__input {
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 0;
+    border: 1px solid rgba(207, 221, 205, 0.67);
+    background-color: rgba(249, 237, 242, 0.61); }
+  .form textarea {
+    height: 5rem; }
+
 .container {
-  height: 40rem; }
+  padding-top: 2rem; }
 
 .section-content {
   height: 40rem; }
   .section-content > * {
     margin-bottom: 2rem; }
-
-.section-checkout {
-  background: yellow; }
