@@ -1,5 +1,5 @@
 .container {
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 .section-content {
   height: 40rem;
@@ -9,5 +9,15 @@
   }
 
 }
+
+.sidebar {
+  position: relative;
+}
+
 .section-checkout {
+  display: block;
+}
+
+.section-customize {
+  margin-bottom: 2rem;
 }

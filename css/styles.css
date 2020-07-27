@@ -45,6 +45,12 @@ body {
     body {
       padding: 0; } }
 
+button {
+  border: none;
+  line-height: 1;
+  margin: 1rem;
+  font-size: 2rem; }
+
 .heading {
   margin-bottom: 2rem; }
 
@@ -149,9 +155,18 @@ body {
     height: 5rem; }
 
 .container {
-  padding-top: 2rem; }
+  padding: 2rem 0; }
 
 .section-content {
   height: 40rem; }
   .section-content > * {
     margin-bottom: 2rem; }
+
+.sidebar {
+  position: relative; }
+
+.section-checkout {
+  display: block; }
+
+.section-customize {
+  margin-bottom: 2rem; }

@@ -7,6 +7,10 @@
   <title>Media</title>
 
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/fontselect-alternate.css">
+
+  <script src="js/jquery.min.js" charset="utf-8"></script>
+  <script src="js/fontselect.min.js" charset="utf-8"></script>
 
 </head>
 <body>
@@ -22,7 +26,7 @@
             </div>
             <h2 class="video__title">Part 2 - WordPress Theme Development - How to create a Custom Admin Page</h2>
             <div class="video">
-              <!-- <iframe src="https://www.youtube.com/embed/nvsK0cTH0So" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+              <iframe src="https://www.youtube.com/embed/nvsK0cTH0So" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="video__description">
               <p>
@@ -32,39 +36,64 @@
           </section>
         </div>
         <div class="col-1-of-4">
-          <section class="section-checkout">
-            <h2 class="heading">Order Details</h2>
-            <form action="" class="form">
-              <div class="form__item">
-                <div class="form__label">Name</div>
-                <input type="text" name="name" value="" class="form__input">
+
+            <section class="section-customize">
+              <h2 class="heading">Customize Dashboard</h2>
+
+              <div class="customize">
+                <form class="form" action="" method="post">
+                  <div class="form__item">
+                    <div class="form__label">Change Background Color</div>
+                    <input type="color" name="" value="" id="backgroundChange">
+                  </div>
+                  <div class="form__item">
+                    <div class="form__label">Change Font Color</div>
+                    <input type="color" name="" value="" id="fontColorChange">
+                  </div>
+                  <div class="form__item">
+                    <div class="form__label">Select Font Style</div>
+                    <input type="text" name="" value="" id="font">
+                  </div>
+                </form>
               </div>
-              <div class="form__item">
-                <div class="form__label">Email</div>
-                <input type="email" name="name" value="" class="form__input">
-              </div>
-              <div class="form__item">
-                <div class="form__label">Mobile</div>
-                <input type="tel" name="name" value="" class="form__input">
-              </div>
-              <div class="form__item">
-                <div class="form__label">Shipping Address</div>
-                <textarea name="name" class="form__input"></textarea>
-              </div>
-              <div class="form__item">
-                <div class="form__label">Billing Address</div>
-                <textarea name="name" class="form__input"></textarea>
-              </div>
-              <div class="form__item">
-                <input type="submit" name="" value="Place Order" class="form__input button button--dark">
-              </div>
-            </form>
-          </section>
+            </section>
+
+            <section class="section-checkout">
+              <h2 class="heading">Order Details</h2>
+              <form action="" class="form">
+                <div class="form__item">
+                  <div class="form__label">Name</div>
+                  <input type="text" name="name" value="" class="form__input">
+                </div>
+                <div class="form__item">
+                  <div class="form__label">Email</div>
+                  <input type="email" name="name" value="" class="form__input">
+                </div>
+                <div class="form__item">
+                  <div class="form__label">Mobile</div>
+                  <input type="tel" name="name" value="" class="form__input">
+                </div>
+                <div class="form__item">
+                  <div class="form__label">Shipping Address</div>
+                  <textarea name="name" class="form__input"></textarea>
+                </div>
+                <div class="form__item">
+                  <div class="form__label">Billing Address</div>
+                  <textarea name="name" class="form__input"></textarea>
+                </div>
+                <div class="form__item">
+                  <input type="submit" name="" value="Place Order" class="form__input button button--dark">
+                </div>
+              </form>
+            </section>
+
         </div>
       </div>
     </div>
   </main>
 
+
+  <script src="js/script.js" charset="utf-8"></script>
 
 </body>
 </html>
