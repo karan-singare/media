@@ -1,0 +1,14 @@
+.container {
+  height: 40rem;
+}
+.section-content {
+  height: 40rem;
+
+  &>* {
+    margin-bottom: 2rem;
+  }
+
+}
+.section-checkout {
+  background: yellow;
+}

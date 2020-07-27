@@ -1,0 +1,129 @@
+/* MEDIA QUERY MANAGER */
+/**
+ * 0-600px Phone
+ * 600 - 900px Tablet portrait
+ * 900 -1200px Tablet landscape
+ * [1200 - 1800] is where our normal styles apply
+ * 1800px + Big desktop
+
+ * $breakpoint arguments choices
+    - phone
+    - tab-port
+    - tab-land
+    - big-desktop
+ * 1em = 16px
+ * ORDER: Base + typography > general layout > page layout > components
+ */
+/*COLORS*/
+/*GRID*/
+/*FONT*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /*root font-size is set here*/
+  /*default font-size is 16px*/
+  /*defines what one rem*/
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+.row {
+  max-width: 114rem;
+  /* trick to align center one block into another */
+  margin: 0 auto;
+  /* selects everything except the last child */
+  /**
+   * if all the child elements of div are floating them
+   * the height of the div becomes zero.
+   * fixed using the clearfix
+   */
+  /* selects all the elements whose class attribute equals 'col-1' [class="col-1"] */
+  /* selects all the elements whose class attribute starts with 'col-1' [class^="col-1"] */
+  /* selects all the elements whose class attribute ends with 'col-1' [class$="col-1"] */
+  /* selects all the elements whose class attribute contains 'col-1' [class*="col-1"] */ }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem; } }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem)/2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem)/3); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem)/4); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem)/3) + 6rem); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 * 6rem)/4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 * 6rem)/4) + 2 * 6rem); }
+
+.video {
+  height: 100%; }
+  .video iframe {
+    height: 100%;
+    width: 100%; }
+  .video__channel {
+    display: flex;
+    align-items: center; }
+    .video__channel .channel__logo {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%; }
+    .video__channel .channel__name {
+      font-size: 2rem;
+      padding-left: 1rem; }
+  .video__title {
+    font-size: 2rem;
+    font-weight: 500; }
+  .video__description {
+    font-size: 1.4rem;
+    line-height: 1.6; }
+
+.container {
+  height: 40rem; }
+
+.section-content {
+  height: 40rem; }
+  .section-content > * {
+    margin-bottom: 2rem; }
+
+.section-checkout {
+  background: yellow; }

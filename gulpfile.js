@@ -18,7 +18,9 @@ function style() {
 
 
 function watch() {
-  browserSync.init();
+  browserSync.init({
+    server: true,
+  });
 
   gulp.watch('./sass/**/*.scss', style);
   gulp.watch('./index.html').on('change', browserSync.reload);
