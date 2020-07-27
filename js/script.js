@@ -250,8 +250,23 @@ $(document).ready(function() {
     });
   });
 
-  console.log($('.container').css('background-color'));
+  /**
+   * Toggling the Order Details on smaller devices which are by default hidden
+   */
+  $('.form__item.mobile input').on('click', function() {
+    $('.section-checkout form').slideDown();
+    $(this).fadeOut();
+  });
+  $('.form__close').on('click', function() {
+    $('.section-checkout form').slideUp();
+    $('.form__item.mobile input').show();
+  });
 
-
+  /**
+   * Toggling the Customization on smaller devices which are by default hidden
+   */
+  $('.customize__toggle').on('click', function() {
+    $('.customize form').slideToggle();
+  });
 
 });

@@ -1,12 +1,43 @@
 .form {
+  position: relative;
+
   width: 100%;
   padding: 2rem 1.5rem;
 
   border: 1px solid rgb(238, 237, 235);
   box-shadow: 0 1rem 2rem rgba(126, 124, 124, 0.57);
 
+  &__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    line-height: 1;
+    display: none;
+
+    cursor: pointer;
+
+    @include respond(phone) {
+      display: block;
+    }
+  }
+
   &__item {
     margin-bottom: 1rem;
+
+    /**
+     * class from the font-select plugin
+     */
+    .font-class {
+      width: 100%!important;
+    }
+  }
+  &__item.mobile {
+    padding: 0 1rem;
+    display: none;
+    @include respond(phone) {
+      display: block;
+    }
   }
 
   &__label {

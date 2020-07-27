@@ -40,6 +40,10 @@
             <section class="section-customize">
               <h2 class="heading">Customize Dashboard</h2>
 
+              <div class="customize__toggle">
+                <button type="button" name="button" class="button button--dark">Customize</button>
+              </div>
+
               <div class="customize">
                 <form class="form" action="" method="post">
                   <div class="form__item">
@@ -61,6 +65,8 @@
             <section class="section-checkout">
               <h2 class="heading">Order Details</h2>
               <form action="" class="form">
+                <div class="form__close">&times;</div>
+
                 <div class="form__item">
                   <div class="form__label">Name</div>
                   <input type="text" name="name" value="" class="form__input">
@@ -85,6 +91,11 @@
                   <input type="submit" name="" value="Place Order" class="form__input button button--dark">
                 </div>
               </form>
+
+              <div class="form__item mobile">
+                <input type="submit" name="" value="Place Order" class="form__input button button--dark">
+              </div>
+
             </section>
 
         </div>

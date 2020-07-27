@@ -1,9 +1,16 @@
 .video {
-  height: 100%;
+  height: 40rem;
+  @include respond(tab-port) {
+    height: 28rem;
+  }
 
   iframe {
     height: 100%;
     width: 100%;
+
+    @include respond(tab-port) {
+      // height: 150%;
+    }
   }
   &__channel {
     display: flex;

@@ -2,7 +2,6 @@
   padding: 2rem 0;
 }
 .section-content {
-  height: 40rem;
 
   &>* {
     margin-bottom: 2rem;
@@ -16,6 +15,12 @@
 
 .section-checkout {
   display: block;
+
+  @include respond(phone) {
+    form {
+      display: none;
+    }
+  }
 }
 
 .section-customize {
