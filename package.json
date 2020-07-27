@@ -1,0 +1,38 @@
+{
+  "name": "media",
+  "version": "1.0.0",
+  "description": "This is the project that converts a youtube channel into a website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karan-singare/media.git"
+  },
+  "keywords": [
+    "Youtube",
+    "Youtube",
+    "Channel",
+    "Youtube",
+    "Channel",
+    "to",
+    "website"
+  ],
+  "author": "Karan Singh Singare",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karan-singare/media/issues"
+  },
+  "homepage": "https://github.com/karan-singare/media#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0"
+  }
+}
